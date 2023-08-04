@@ -1,0 +1,68 @@
+
+body {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    margin: 0;
+    padding: 0;
+    border: 0;  
+    font-family: "Darker Grotesque";
+}
+nav {
+    padding: 28px 72px 14px 72px;
+    background-color: black;
+}
+nav ul {
+    font-family: 'Emeritus Trial';
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    align-items: center;
+    font-size: 1.25rem;
+}
+
+nav li {
+    background-color: black;
+    border: 0px blue solid;
+    padding: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+  
+.logo {
+    font-family: 'Redaction';
+    font-style: italic;
+    font-size: 3rem;
+}
+
+.container-nav {
+    display: grid;
+    border: 0px red solid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 35%;
+}
+
+h1{
+    margin-left: 92px;
+    font-weight: 200;
+    font-style: normal; 
+}
+
+@media screen and (min-width: 600px) {
+    body {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .container-nav {
+        grid-auto-flow: column;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .container-main {
+      grid-auto-flow: column;
+    }
+  }
